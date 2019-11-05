@@ -14,7 +14,6 @@ const redirect = encodeURIComponent('http://discord.gusnetworks.me/api/discord/c
 router.get('/login', (req, res) => {
   res.redirect(`https://discordapp.com/api/oauth2/authorize?client_id=${CLIENT_ID}&scope=identify&response_type=code&redirect_uri=${redirect}`);
 });
-
 router.get('/callback', catchAsync(async (req, res) => {
 	if (!req.query.code) throw new Error('NoCodeProvided');
 	const code = req.query.code;
