@@ -9,7 +9,6 @@ if (token && !window.localStorage.getItem('token')) {
 
 if (window.localStorage.getItem('token')) {
 	console.log('Fetching User Data...')	
-	$('#login').remove();
 	fetch(`https://discordapp.com/api/users/@me`,
 	  {
 		method: 'GET',
@@ -21,7 +20,7 @@ if (window.localStorage.getItem('token')) {
 		let user = json
 		console.log(user.id)
 
-		document.getElementById('tagline').innerText = `Welcome to my Website, ${user.username}`
+		$('#tagline').text = `Welcome to my Website, ${user.username}`
 		fetch(`http://discord.gusnetworks.me/api/roblox/user/${user.id}`,
 		{
 		  method: 'GET',
@@ -30,7 +29,7 @@ if (window.localStorage.getItem('token')) {
 		  let user = json
 		  let robloxUsername = json.robloxUsername
 
-		  document.getElementById('roblox').innerText = `ROBLOX USERNAME: ${robloxUsername}`;
+		  $('#roblox').text = `ROBLOX: ${robloxUsername}`;
   
 		});
 	  });

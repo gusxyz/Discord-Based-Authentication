@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 
 <html>
-	<head>   
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-		<script
-		src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
-		
-		<title>Basic Discord Authentication</title>
 
-		<style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<title>Basic Discord Authentication</title>
+
+	<style>
 		.container {
-            display: flex;
-            width: 100%;
-            padding: 40px 0;
-            align-items: center;
-            justify-content: center;
-          }
-		</style>
-		<script src="index.js"></script>
-	</head>
+			display: flex;
+			width: 100%;
+			padding: 40px 0;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+	<script src="index.js"></script>
+</head>
 
-	<body>
-			<h1>Basic Discord Authentication</h1>
-			<h1 id="tagline">Currently Not Logged In</h1>
-			<h1 id="roblox"></h1>
+<body>
+	<div id="app">
+		<h1>Basic Discord Authentication</h1>
+		<h1 id="tagline">Currently Not Logged In</h1>
+		<h1 id="roblox"></h1>
 		<div class="container">
-				<a id="login" href="/api/discord/login" class="button is-link is-rounded">Login Via Discord</a>
+			<a id="login" href="/api/discord/login" class="button is-link is-rounded">Login Via Discord</a>
 
-				<a onClick="logout()" class="button is-link is-rounded">Log Out</a>
+			<a onClick="logout()" class="button is-link is-rounded">Log Out</a>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
