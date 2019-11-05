@@ -4,6 +4,7 @@ let token = url.searchParams.get("token")
 
 if (token && !window.localStorage.getItem('token')) {
 	window.localStorage.setItem('token', token)
+	window.location.href = "/"
 }
 
 if (window.localStorage.getItem('token')) {
