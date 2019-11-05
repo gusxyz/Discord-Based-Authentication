@@ -20,7 +20,7 @@ if (window.localStorage.getItem('token')) {
 		console.log(user.id)
 
 		document.getElementById('tagline').innerText = `Welcome to my Website, ${user.username}`
-		fetch(`http://localhost:3000/api/roblox/${user.id}`,
+		fetch(`http://167.71.115.15:5060/api/roblox/${user.id}`,
 		{
 		  method: 'GET',
 		}) .then(response => response.json())
