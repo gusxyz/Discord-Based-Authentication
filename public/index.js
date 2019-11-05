@@ -22,7 +22,7 @@ if (window.localStorage.getItem('token')) {
 		console.log(user.id)
 
 		document.getElementById('tagline').innerText = `Welcome to my Website, ${user.username}`
-		fetch(`http://discord.gusnetworks.me/api/roblox/${user.id}`,
+		fetch(`http://discord.gusnetworks.me/api/roblox/user/${user.id}`,
 		{
 		  method: 'GET',
 		}) .then(response => response.json())

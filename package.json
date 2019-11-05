@@ -11,6 +11,7 @@
   "dependencies": {
     "btoa": "^1.2.1",
     "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
     "volleyball": "^1.5.1"
