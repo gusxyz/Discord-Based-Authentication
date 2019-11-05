@@ -8,7 +8,7 @@ if (token && !window.localStorage.getItem('token')) {
 }
 
 if (window.localStorage.getItem('token')) {
-	console.log('Fetching User Data...')
+	console.log('Fetching User Data...')	
 	$('#login').remove();
 	fetch(`https://discordapp.com/api/users/@me`,
 	  {
